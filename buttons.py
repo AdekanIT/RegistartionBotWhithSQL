@@ -1,6 +1,14 @@
 from telebot import types
 
 
+def lang():
+    ib = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    en = types.KeyboardButton('en')
+    ru = types.KeyboardButton('ru')
+    ib.add(en, ru)
+    return ib
+
+
 def num_bt():
     # Create environment
     kb = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -9,6 +17,7 @@ def num_bt():
     # Add button in environment
     kb.add(number)
     return kb
+
 
 # Buttons for sent location
 def loc_bt():
@@ -19,12 +28,3 @@ def loc_bt():
     # Add button in environment
     kb.add(location)
     return kb
-
-
-
-
-
-
-
-
-
