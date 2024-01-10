@@ -1,12 +1,6 @@
 from telebot import types
 
 
-def lang():
-    ib = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    en = types.KeyboardButton('en')
-    ru = types.KeyboardButton('ru')
-    ib.add(en, ru)
-    return ib
 
 
 def num_bt():
